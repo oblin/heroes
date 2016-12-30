@@ -81,6 +81,6 @@ export class AppComponent  {
   }
 
   getHeros(): void {
-    this.heroService.getHeros().then(heros => this.heros = heros);
+    this.heroService.getHerosSlowly().then(heros => this.heros = heros);
   }
 }
